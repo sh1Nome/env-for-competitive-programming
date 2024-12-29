@@ -1,0 +1,9 @@
+services:
+  jdk:
+    image: eclipse-temurin:17-jdk-noble
+    init: true
+    tty: true
+    working_dir: "/tmp"
+    entrypoint: "tail -f /dev/null"
+    volumes:
+      - "./work:/home/ubuntu"
